@@ -29618,10 +29618,42 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10,
-        columnNumber: 13
+        lineNumber: 11,
+        columnNumber: 5
       }
-    }, "hello"), /*#__PURE__*/_react.default.createElement("button", {
+    }, /*#__PURE__*/_react.default.createElement("ul", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 6
+      }
+    }, ['Home', 'About us', 'Portfolio', 'Contact'].map((text, i) => {
+      return /*#__PURE__*/_react.default.createElement("li", {
+        key: i,
+        style: {
+          animationDelay: `${100 * i}ms`
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "#",
+        onClick: e => {
+          e.preventDefault();
+          setOpen(false);
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 10
+        }
+      }, text));
+    }))), /*#__PURE__*/_react.default.createElement("button", {
       className: "FullscreenMenuToggler",
       style: {
         color: open ? 'white' : 'black'
@@ -29630,7 +29662,7 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11,
+        lineNumber: 31,
         columnNumber: 4
       }
     }, /*#__PURE__*/_react.default.createElement("svg", {
@@ -29640,7 +29672,7 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 36,
         columnNumber: 5
       }
     }, /*#__PURE__*/_react.default.createElement("g", {
@@ -29649,7 +29681,7 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 37,
         columnNumber: 6
       }
     }, /*#__PURE__*/_react.default.createElement("line", {
@@ -29660,7 +29692,7 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 38,
         columnNumber: 7
       }
     }), /*#__PURE__*/_react.default.createElement("line", {
@@ -29671,7 +29703,7 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 39,
         columnNumber: 7
       }
     }), /*#__PURE__*/_react.default.createElement("line", {
@@ -29682,7 +29714,7 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 40,
         columnNumber: 7
       }
     })))));
