@@ -29198,34 +29198,48 @@ try {
   });
   exports.default = App;
 
-  var _react = _interopRequireDefault(require("react"));
+  var _react = _interopRequireWildcard(require("react"));
 
-  var _jsxFileName = "/home/teamcake/Code/class43/week-7/css_transitions/src/App.jsx";
+  var _classnames = _interopRequireDefault(require("classnames"));
+
+  var _jsxFileName = "/home/teamcake/Code/class43/week-7/css_transitions/src/App.jsx",
+      _s = $RefreshSig$();
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+  function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
   function App() {
+    _s();
+
+    const [open, setOpen] = (0, _react.useState)(false);
     return /*#__PURE__*/_react.default.createElement("div", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 3
       }
     }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "searchbar",
+      className: (0, _classnames.default)('searchbar', {
+        'is-open': open
+      }),
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 6,
+        lineNumber: 8,
         columnNumber: 4
       }
     }, /*#__PURE__*/_react.default.createElement("input", {
       placeholder: "Search",
+      onFocus: e => setOpen(true),
+      onBlur: e => setOpen(false),
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7,
+        lineNumber: 13,
         columnNumber: 5
       }
     }), /*#__PURE__*/_react.default.createElement("div", {
@@ -29233,7 +29247,7 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8,
+        lineNumber: 18,
         columnNumber: 5
       }
     }, /*#__PURE__*/_react.default.createElement("div", {
@@ -29241,67 +29255,69 @@ try {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9,
+        lineNumber: 19,
         columnNumber: 6
       }
     }, /*#__PURE__*/_react.default.createElement("ul", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10,
+        lineNumber: 20,
         columnNumber: 7
       }
     }, /*#__PURE__*/_react.default.createElement("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11,
+        lineNumber: 21,
         columnNumber: 8
       }
     }, /*#__PURE__*/_react.default.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12,
+        lineNumber: 22,
         columnNumber: 9
       }
     }, "re"), "al life CSS transition"), /*#__PURE__*/_react.default.createElement("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 24,
         columnNumber: 8
       }
     }, /*#__PURE__*/_react.default.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 25,
         columnNumber: 9
       }
     }, "Re"), "act hooks"), /*#__PURE__*/_react.default.createElement("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 27,
         columnNumber: 8
       }
     }, "pa", /*#__PURE__*/_react.default.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 28,
         columnNumber: 11
       }
     }, "re"), "ntheses"))))), /*#__PURE__*/_react.default.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 34,
         columnNumber: 4
       }
     }, "Use the searchbar above"));
   }
+
+  _s(App, "xG1TONbKtDWtdOTrXaTAsNhPg/Q=");
 
   _c = App;
 
@@ -29313,7 +29329,7 @@ try {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"c3469d175e6ab91a6ebac2096f1b2459","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"304bfcdf97c182c258933a329c4fc1cd"}],"304bfcdf97c182c258933a329c4fc1cd":[function(require,module,exports) {
+},{"react":"c3469d175e6ab91a6ebac2096f1b2459","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"304bfcdf97c182c258933a329c4fc1cd","classnames":"82a7ba5c3518b9ae78c0a43545611996"}],"304bfcdf97c182c258933a329c4fc1cd":[function(require,module,exports) {
 "use strict";
 
 var Refresh = require('react-refresh/runtime');
@@ -29503,6 +29519,61 @@ function registerExportsForReactRefresh(module) {
     Refresh.register(exportValue, id + ' %exports% ' + key);
   }
 }
-},{"react-refresh/runtime":"6a2f65278353e882d7f14bcf674e0c85"}]},{},["64c1770b35b04eb343009bb27a752262","e01cef0aa36990d399570eb7c307ad0a","b0025b4f324d77554cb79cd8dfbefcdb"], null)
+},{"react-refresh/runtime":"6a2f65278353e882d7f14bcf674e0c85"}],"82a7ba5c3518b9ae78c0a43545611996":[function(require,module,exports) {
+var define;
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/* global define */
+(function () {
+  'use strict';
+
+  var hasOwn = {}.hasOwnProperty;
+
+  function classNames() {
+    var classes = [];
+
+    for (var i = 0; i < arguments.length; i++) {
+      var arg = arguments[i];
+      if (!arg) continue;
+      var argType = typeof arg;
+
+      if (argType === 'string' || argType === 'number') {
+        classes.push(arg);
+      } else if (Array.isArray(arg) && arg.length) {
+        var inner = classNames.apply(null, arg);
+
+        if (inner) {
+          classes.push(inner);
+        }
+      } else if (argType === 'object') {
+        for (var key in arg) {
+          if (hasOwn.call(arg, key) && arg[key]) {
+            classes.push(key);
+          }
+        }
+      }
+    }
+
+    return classes.join(' ');
+  }
+
+  if (typeof module !== 'undefined' && module.exports) {
+    classNames.default = classNames;
+    module.exports = classNames;
+  } else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+    // register as 'classnames', consistent with npm package name
+    define('classnames', [], function () {
+      return classNames;
+    });
+  } else {
+    window.classNames = classNames;
+  }
+})();
+},{}]},{},["64c1770b35b04eb343009bb27a752262","e01cef0aa36990d399570eb7c307ad0a","b0025b4f324d77554cb79cd8dfbefcdb"], null)
 
 //# sourceMappingURL=css_transitions.ac7b93bc.js.map
