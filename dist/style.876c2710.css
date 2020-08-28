@@ -19,7 +19,9 @@ body {
 	font-weight: bold;
 	color: #777;
 
-	transition: width 0.2s ease;
+	/* transition: width 0.2s ease; */
+	/* transition: width 0.2s ease, border-color 1s ease */
+	transition: all 0.2s ease;
 }
 
 .searchbar input::placeholder {
