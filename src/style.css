@@ -21,7 +21,12 @@ body {
 
 	/* transition: width 0.2s ease; */
 	/* transition: width 0.2s ease, border-color 1s ease */
-	transition: all 0.2s ease;
+	/* transition: all 0.2s ease; */
+	/* transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6); */
+	/*ease in expo  */
+	/* transition: all 0.6s cubic-bezier(0.7, 0, 0.84, 0);  */
+	/* ease our back */
+	transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .searchbar input::placeholder {
